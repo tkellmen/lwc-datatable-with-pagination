@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <template if:true={showTable}>
+            <div class={isLoadedStyle} style={tableHeight}>
+                <lightning-datatable
+                    hide-checkbox-column={hideCheckboxColumn}
+                    key-field="Id"
+                    class={datatableClass}
+                    data={recordsToDisplay}
+                    columns={columns}
+                    onrowselection={onRowSelection}
+                    onrowaction={onRowAction}
+                    column-widths-mode="auto"
+                    selected-rows={preSelRows}
+                    sorted-direction={sortedDirection}
+                    sorted-by={sortedBy}
+                    onsort={updateColumnSorting}
+                    show-row-number-column={showRowNumberColumn}
+                >
+                </lightning-datatable>
+            </div>
+
+            <template if:true={spinner}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+        </template>
+    </div>
+</template>

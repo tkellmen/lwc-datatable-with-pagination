@@ -1,0 +1,11 @@
+.custom-paginator.footer-pagination-input-class {
+  border-radius: 3px;
+  padding: 2px 0 0 0;
+  width: 43px;
+  text-align: center;
+}
+
+.paginator {
+  padding-bottom: 15px;
+  margin-bottom: 4px;
+}

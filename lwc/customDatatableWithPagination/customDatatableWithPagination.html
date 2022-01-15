@@ -1,0 +1,61 @@
+<template>
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="table-label">{tableLabel}</div>
+                    </div>
+                </div>
+            </div>
+
+            <c-custom-paginator
+                default-page-size={defaultPageSize}
+                total-pages={totalPages}
+                page-number={pageNumber}
+                records-length={recordsLength}
+                current-length={currentLength}
+                search-border={searchBorder}
+                search-input-color={searchInputColor}
+                style-parameters={paginatorStyleParams}
+                records-per-page-selector-color={recordsPerPageSelectorColor}
+                records-per-page-selector-border={recordsPerPageSelectorBorder}
+                showing-records-placeholder={showingRecordsPlaceholder}
+                onpreviouspage={previousPageHandler}
+                onpagenumberchange={pageNumberChangeHandler}
+                onrecordsperpageevent={handleRecordsPerPage}
+                onnextpage={nextPageHandler}
+                onsearch={search}
+                hide-pagination={hidePagination}
+                hide-search={hideSearch}
+                search-placeholder={inputPlaceholder}
+            >
+                <!-- start -->
+                <div slot="slotNearSearch" class="slds-clearfix"></div>
+                <!-- end -->
+
+                <div slot="datatable">
+                    <template if:true={showTable}>
+                        <c-custom-datatable
+                            slot="datatable"
+                            total-records={retrievedRecords}
+                            columns={columns}
+                            spinner={spinner}
+                            pagination-enabled={paginationEnabled}
+                            default-page-size={defaultPageSize}
+                            fields-not-use-in-search={fieldsNotUseInSearch}
+                            sorted-name-correction={sortedNameCorrection}
+                            onselecteditemsevent={selectedItemsHandler}
+                            onrowactionevent={rowActionHandler}
+                            onupdatepaginatorstateevent={updatePaginatorState}
+                            style-parameters={tableParams}
+                            show-row-number-column={showRowNumberColumn}
+                        >
+                        </c-custom-datatable>
+                    </template>
+                    <template if:false={showTable}> No results found </template>
+                </div>
+            </c-custom-paginator>
+        </div>
+    </div>
+</template>

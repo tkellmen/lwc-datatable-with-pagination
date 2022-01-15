@@ -1,0 +1,100 @@
+.custom-datatable tbody tr {
+  font-size: var(--text-font-size);
+  color: var(--text-font-color);
+}
+.custom-datatable thead tr th {
+  font-size: var(--header-font-size);
+}
+
+.custom-datatable .slds-table_header-fixed_container:before {
+  border-bottom: 2px var(--header-bottom-border-color) solid;
+}
+
+.custom-datatable .slds-has-focus.slds-is-resizable .slds-th__action,
+.custom-datatable,
+.slds-has-focus.slds-is-resizable .slds-th__action:hover {
+  background-color: white;
+  box-shadow: 0 0 0;
+}
+/* .custom-datatable .slds-th__action:hover {
+  background-color: white;
+} */
+
+.custom-datatable
+  .slds-table_bordered:not(.slds-no-row-hover)
+  tbody
+  tr:hover
+  > td:not(.slds-has-focus),
+.custom-datatable
+  .slds-table_bordered:not(.slds-no-row-hover)
+  tbody
+  tr:hover
+  > th:not(.slds-has-focus),
+.custom-datatable
+  .slds-table_bordered:not(.slds-no-row-hover)
+  tbody
+  tr:focus
+  > td:not(.slds-has-focus),
+.custom-datatable
+  .slds-table_bordered:not(.slds-no-row-hover)
+  tbody
+  tr:focus
+  > th:not(.slds-has-focus),
+.custom-datatable
+  .slds-table--bordered:not(.slds-no-row-hover)
+  tbody
+  tr:hover
+  > td:not(.slds-has-focus),
+.custom-datatable
+  .slds-table--bordered:not(.slds-no-row-hover)
+  tbody
+  tr:hover
+  > th:not(.slds-has-focus),
+.custom-datatable
+  .slds-table--bordered:not(.slds-no-row-hover)
+  tbody
+  tr:focus
+  > td:not(.slds-has-focus),
+.custom-datatable
+  .slds-table--bordered:not(.slds-no-row-hover)
+  tbody
+  tr:focus
+  > th:not(.slds-has-focus) {
+  box-shadow: none;
+}
+
+.custom-datatable .slds-table_bordered {
+  border: 0px;
+}
+.custom-datatable .slds-table th:focus,
+.custom-datatable .slds-table th.slds-has-focus,
+.custom-datatable .slds-table [role="gridcell"]:focus,
+.custom-datatable .slds-table [role="gridcell"].slds-has-focus {
+  box-shadow: 0 0 0;
+}
+.custom-datatable .slds-table_bordered tbody th,
+.custom-datatable .slds-table_bordered tbody td {
+  border: 0px var(--lwc-colorBackgroundRowHover, red) solid;
+}
+
+.custom-datatable .slds-table:not(.slds-no-row-hover) tbody tr:hover > td,
+.custom-datatable .slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.custom-datatable .slds-table:not(.slds-no-row-hover) tbody tr:focus > td,
+.custom-datatable .slds-table:not(.slds-no-row-hover) tbody tr:focus > th {
+  background-color: var(--hover-background-color);
+}
+
+.custom-datatable .slds-has-focus.slds-is-resizable .slds-th__action,
+.custom-datatable .slds-has-focus.slds-is-resizable .slds-th__action:focus,
+.custom-datatable .slds-has-focus.slds-is-resizable .slds-th__action:hover,
+.custom-datatable
+  .slds-has-focus.slds-is-resizable
+  .slds-th__action:focus:hover,
+.custom-datatable .slds-is-resizable .slds-th__action:focus,
+.custom-datatable .slds-is-resizable .slds-th__action:focus:hover {
+  box-shadow: 0 0 0;
+}
+
+.custom-datatable .slds-has-focus .slds-th__action {
+  box-shadow: 0 0 0;
+}

@@ -1,0 +1,45 @@
+.table-wrapper .btn {
+	float: right;
+	color: #333;
+	background-color: #fff;
+	outline: none !important;
+	margin-left: 10px;
+}
+.table-wrapper .btn:hover {
+	color: #333;
+	background: #f2f2f2;
+}
+.table-wrapper .btn.btn-primary {
+	color: #fff;
+	background: #03a9f4;
+}
+.table-wrapper .btn.btn-primary:hover {
+	background: #03a3e7;
+}
+.datatable {
+	table-layout: fixed;
+	width: 99.9% !important;
+}
+span.slds-th__action {
+	background-color: white;
+	box-shadow: white;
+}
+
+/* .custom-datatable {
+  color: red;
+} */
+
+.relative {
+	position: relative;
+}
+
+.slds-table_striped tbody tr:nth-of-type(even) > td {
+	background-color: var(--lwc-colorBackgroundRowHover, rgba(0, 255, 141, 0.05));
+}
+
+.notLoaded {
+	opacity: 0;
+}
+.loaded {
+	opacity: 1;
+}

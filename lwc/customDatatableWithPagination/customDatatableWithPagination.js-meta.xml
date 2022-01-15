@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+	<isExposed>true</isExposed>
+    <description>Variant of custom table</description>
+    <masterLabel>Custom table component</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property label="Table Label" name="tableLabel" type="String" default="Table Label" />
+
+			<property label="Label Font Size" name="bigLabelFontSize" type="Integer" default="18" min="1" max="100" />
+			<property label="Label Font Color" name="bigLabelFontColor" type="Color" default="rgb(255, 255, 255)" />
+
+			
+			<property label="Headings Font Size" name="labelFontSize" type="Integer" default="14" min="1" max="100" />
+			<property label="Headings Font Color" name="labelFontColor" type="Color" default="rgb(237, 139, 0)" />
+      <property label="Subheading underline Color" name="subheaderUnderline" type="Color" default="rgb(237, 139, 0)" />
+			<property label="Text Font Size" name="textFontSize" type="Integer" default="14" min="1" max="100" />
+			<property label="Text Font Color" name="textFontColor" type="Color" default="rgb(136, 139, 141)" />
+			<property label="Table Header Color" name="headerColor" type="Color" default="rgb(136, 139, 141)" />
+      <property label="Checkbox Color " name="checkboxColor" type="Color" default="rgb(237, 139, 0)" />
+
+			<property
+				label="Padding Around"
+				name="wrapperPadding"
+				type="Integer"
+				default="0"
+				min="0"
+				max="100"
+				description="Value of a padding (space) around the table"
+			/>
+			<property label="Table Border Color" name="wrapperBorderColor" type="Color" default="rgba(134, 135, 136, 0.45)" />
+			<property
+				label="Row Hower Background Color"
+				name="hoverBackgroundColor"
+				type="Color"
+				default="rgba(136, 139, 141, 0.14)"
+			/>
+			<property label="Table Background Color" name="tableBackgroundColor" type="Color" default="rgb(255, 255, 255)" />
+
+      <property label="Primary Button Label" name="primaryButtonLabel" type="String" default="Remove" />
+      <property
+				label="Primary Button Color"
+				name="primaryButtonBackgroundColor"
+				type="Color"
+				default="rgb(237, 139, 0)"
+			/>
+
+     
+   
+      <property label="Secondary Button Label" name="secondaryButtonLabel" type="String" default="Link" />
+
+      <property
+				label="Secondary Button Color"
+				name="secondaryButtonBackgroundColor"
+				type="Color"
+				default="rgb(337, 139, 0)"
+			/>
+
+			<property label="Enable Search" name="enableSearch" type="Boolean" default="true" />
+
+      <property label="Search Border Color" name="searchBorder" type="Color" default="rgb(237, 139, 0)" />
+      <property label="Search Text  Color" name="searchInputColor" type="Color" default="rgb(136, 139, 141)" />
+			<property label="Enable Pagiation" name="enablePagination" type="Boolean" default="true" />
+			<property label="Show Row Numder Column" name="showRowNumberColumn" type="Boolean" default="true" />
+     
+      <property
+				label="Count Per Page Border Color"
+				name="recordsPerPageSelectorBorder"
+				type="Color"
+				default="rgb(237, 132, 10)"
+			/>
+
+      <property
+				label="Count Per Page Text Color"
+				name="recordsPerPageSelectorColor"
+				type="Color"
+				default="rgb(136, 139, 141)"
+			/>
+      <property label="Controls Text Color" name="controlsTextColor" type="Color" default="rgb(136, 139, 141)" />
+
+  <property
+				label="Footer Input Text Color"
+				name="footerInputPaginationColor"
+				type="Color"
+				default="rgb(136, 139, 141)"
+			/>
+  <property
+				label="Footer Input Border Color"
+				name="footerInputPaginationBorder"
+				type="Color"
+				default="rgb(136, 139, 141)"
+			/>
+
+   
+
+			<property label="Border Color" name="separatorColor" type="Color" default="rgb(136, 139, 141)" />
+			<property label="Default Record Numbers" name="defaultPageSize" type="Integer" default="3" min="1" max="100" />
+			<property label="Input Help Text" name="inputPlaceholder" type="String" default="Start typing to filter rows" />
+			<property
+				label="Showing records placeholder"
+				name="showingRecordsPlaceholder"
+				type="String"
+				default="Showing {currentLength} out of {totalRecordsLength} entries"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

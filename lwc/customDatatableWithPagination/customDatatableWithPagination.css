@@ -1,0 +1,87 @@
+.table-title {
+	color: #fff;
+	background: var(--header-color);
+	padding: 21px 25px;
+	margin: -22px -26px 19px;
+	border-radius: 3px 3px 0 0;
+}
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 24px;
+}
+.table-responsive {
+	padding: var(--wrapper-padding);
+	margin: 30px 0;
+	overflow-x: hidden !important;
+}
+.table-wrapper {
+	min-width: auto;
+	background: var(--table-background-color);
+	border: var(--table-border-background-color) 2px solid;
+	padding: 20px 25px;
+	border-radius: 5px 5px 5px 5px;
+	--lwc-brandTextLink: var(--text-font-color);
+	--lwc-brandTextLinkActive: var(--separator-color);
+}
+
+.table-label {
+	font-size: var(--label-font-size);
+	color: var(--label-font-color);
+}
+
+.table-wrapper .btn {
+	float: right;
+	color: #333;
+	background-color: #fff;
+	outline: none !important;
+	margin-left: 10px;
+}
+.table-wrapper .btn:hover {
+	color: #333;
+	background: #f2f2f2;
+}
+.table-wrapper .btn.btn-primary {
+	color: #fff;
+	background: #03a9f4;
+}
+.table-wrapper .btn.btn-primary:hover {
+	background: #03a3e7;
+}
+.datatable {
+	table-layout: fixed;
+	width: 99.9% !important;
+}
+span.slds-th__action {
+	background-color: white;
+	box-shadow: white;
+}
+.input2 {
+	height: 25px;
+	width: 35px;
+	text-align-last: center;
+	font-size: 16px;
+	color: black;
+}
+.paginationText {
+	color: black;
+	font-size: 14px;
+}
+
+.relative {
+	position: relative;
+}
+
+.headerButton {
+	--sds-c-button-brand-color-background: var(--header-button-background-color);
+	--sds-c-button-brand-color-border: var(--header-button-background-color);
+	--lwc-colorBackgroundBrandHover: white;
+	--lwc-colorBackgroundBrand: var(--header-button-background-color);
+	--lwc-colorBorderBrandActive: var(--header-button-background-color);
+	--sds-c-button-brand-color-background-active: var(--header-button-background-color);
+}
+
+.headerButton:hover {
+	--sds-c-button-brand-color-background-hover: white;
+	--sds-c-button-brand-text-color-hover: var(--header-button-background-color);
+	--sds-c-button-brand-color-border-hover: var(--header-button-background-color);
+}
